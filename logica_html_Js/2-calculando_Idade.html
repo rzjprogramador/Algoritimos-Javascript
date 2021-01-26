@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+  .container {width: 90%;}
+  .corResult {color: red;}
+  label {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: .1rem;
+}
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Calculando Idade</h1>
+
+    <form action="" method="post">
+      <div class="form-group row">
+  
+        <label>Ano</label>
+        <input class="form-control" type="text" id="n1" placeholder="Digite..." /> <br> 
+        
+        <label>Nascimento</label>  
+        <input class="form-control" type="text" id="n2" placeholder="Digite..." onblur="calcular()" /> <br>
+      </div>
+    </form>
+    <button onclick="calcular()" class="btn btn-primary">Enviar</button>
+  </div>
+ <hr>
+
+    <p>Em <span id="mostraN1"></span> Calculando com o ano enviado <span id="mostraN2"></span> </p> 
+    <h2>SUA IDADE SERÁ : <span class="corResult" id="resultado"></span> anos.</h2> 
+  
+
+  <script>
+    function calcular() {
+      let n1 = parseInt(document.getElementById('n1').value, 10); 
+      let n2 = parseInt(document.getElementById('n2').value, 10);
+      
+      //Só recuperando valor das variaveis e colocando no front html
+      document.getElementById("mostraN1").innerHTML = n1
+      document.getElementById("mostraN2").innerHTML = n2
+
+      // Atribuindo ao id resultado o calculo
+      document.getElementById('resultado').innerHTML = n1 - n2;
+    }
+
+
+    /*
+
+    CONCEITO: Soma valores de 2 inout Js com Html
+
+    Com javascript pura basta pegar os valores dos campos pelo id, 
+    com document.getElementById() converter os valores para int utilizando parseInt(), 
+    o número 10 significa em qual base será convertido o número, somar e jogar o resultado no input.
+
+function calcular() {
+  var n1 = parseInt(document.getElementById('n1').value, 10);
+  var n2 = parseInt(document.getElementById('n2').value, 10);
+  document.getElementById('resultado').innerHTML = n1 + n2;
+}
+<form action="" method="post">
+  N1: <input type="text" id="n1" value="10" /> <br> N2: <input type="text" id="n2" value="5" onblur="calcular()" /> <br>
+</form>
+
+<div id="resultado"></div>
+
+FRONT framework BOOTSTRAP
+NO INPUT ADICIONADO CLASSE : class="form-control" 
+NO BUTTON ADICIONADO A CLASS : class="btn btn-primary"
+    
+    
+GrandeAjuda [https://pt.stackoverflow.com/questions/87752/soma-em-2-inputs-e-aparecer-em-tempo-real-javascript]
+Algoritimo [https://portugol-webstudio.cubos.io/ide#share=azxvyf]
+
+    */
+
+    
+
+  </script>
+
+  
+</body>
+</html>
