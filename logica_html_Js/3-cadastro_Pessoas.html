@@ -19,11 +19,78 @@
 
 </head>
 <body>
+  <h1>Cadastro em tempo de execução</h1>
+
+  <fieldset>
+    <legend>Cadastro de Pessoas</legend>
+    <form>
+      <div>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+      </div>
+      <div>
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" name="sobrenome" id="sobrenome">
+      </div>
+      <div>
+        <label for="cpf">Cpf</label>
+        <input type="text" name="cpf" id="cpf">
+      </div>
+      <div>
+        <label for="telefone">Telefone</label>
+        <input type="text" name="telefone" id="telefone">
+      </div>
+      <div>
+        <label for="endereco">Endereço</label>
+        <input type="text" name="nome" id="endereco">
+      </div>
+
+      <hr>
+      <div>
+        <input type="button" value="Cadastrar"onclick="cadastrarPessoas()">
+      </div>
+
+      
+    </form>
+  </fieldset>
+
+  <!-- ======= RESULTADOS ======== -->
+  <fieldset>
+    <legend>Pessoas Cadastradas</legend>
+    <table id="registros" border="1">
+      <tr>
+        <td>Nome</td>
+        <td>Sobrenome</td>
+        <td>CPF</td>
+        <td>Telefone</td>
+        <td>Endereço</td>
+      </tr>
+    </table>
+
+  </fieldset>
   
 
   <script>
-    
+    function cadastrarPessoas() {
+      var html = "<tr>";
+        html += "<td>Nome</td>";
+        html += "<td>Sobrenome</td>";
+        html += "<td>CPF</td>";
+        html += "<td>Telefone</td>";
+        html += "<td>Endereço</td>";
+        html += "</tr>";
+
+      document.getElementById("registros").innerHTML += html;
+
+    }
+
+
+
+
     /*
+    HTML 
+    elemento : for >> quando clica no nome do label ele da foco na caixa de input
+
 
     */
 
