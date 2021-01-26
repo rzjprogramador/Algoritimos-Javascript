@@ -72,15 +72,39 @@
 
   <script>
     function cadastrarPessoas() {
-      var html = "<tr>";
-        html += "<td>22</td>";
-        html += "<td>22</td>";
-        html += "<td>22</td>";
-        html += "<td>22</td>";
-        html += "<td>22</td>";
-        html += "</tr>";
 
+      // inicializando valores que vem do input html e atribuindo em variaveis
+      let nome = document.getElementById("nome").value;
+      let sobrenome = document.getElementById("sobrenome").value;
+      let cpf = document.getElementById("cpf").value;
+      let telefone = document.getElementById("telefone").value;
+      let endereco = document.getElementById("endereco").value;
+      
+      // Processando variaveis inicializadas com os valores do input
+      var html = `<tr>`;
+        html += `<td>${nome}</td>`;
+        html += `<td>${sobrenome}</td>`;
+        html += `<td>${cpf}</td>`;
+        html += `<td>${telefone}</td>`;
+        html += `<td>${endereco}</td>`;
+        html += `</tr>`;
+      
+        // Replica o html da tabela resultados
       document.getElementById("registros").innerHTML += html;
+
+      // Limpar Inputs
+      document.getElementById("nome").value = "";
+      document.getElementById("sobrenome").value = "";
+      document.getElementById("cpf").value = "";
+      document.getElementById("telefone").value = "";
+      document.getElementById("endereco").value = "";
+
+      // Mensagem de Sucesso Cadastro
+      alert(`Sr(a) ${nome} CADASTRADO COM SUCESSO !`)
+      
+      // Foco no Primeiro elemento na volta
+      document.getElementById("nome").focus();
+
 
     }
 
@@ -91,6 +115,9 @@
     HTML 
     elemento : for >> quando clica no nome do label ele da foco na caixa de input
 
+    INSERINDO VALOR EM ELEMENTO HTML
+    Quando se tem um elemento html que tem abertura e fechamento de tag usar innerHTML para inserir valor
+    Quando o elemento html for de auto fechamento utilizar somente .value   para inserir valor
 
     */
 
