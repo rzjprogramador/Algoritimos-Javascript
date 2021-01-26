@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+  .container {width: 90%;}
+  .corResult {color: red;}
+  label {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: .1rem;
+}
+</style>
+
+</head>
+<body>
+  
+
+  <script type="text/javascript">
+
+    let valorBrutoAnual = parseInt(prompt("Digite o valor bruto anual: "))
+    let valorDividasAnual = parseInt(prompt("Digite o valor das dividas anual"))
+
+    const mes = 12
+    let lucroBrutoAnual = (valorBrutoAnual - valorDividasAnual)
+    let lucroBrutoMensal = (valorBrutoAnual - valorDividasAnual)/mes
+
+    document.write(`O seu lucro mensal é ${lucroBrutoMensal} <br>` )
+    document.write(`O seu lucro anual é ${lucroBrutoAnual} <br>` )
+
+
+
+
+    
+    /*
+    PEDIDO DESAFIO :
+    Dado que o Reinaldo precisa fazer a seguinte operacao
+    Valor bruto gerado anual - valor dividas anuais
+    para calcular o valor mensal da empresa
+
+    Crie um programa que calcule os ganhos brutos anuais
+    as despesas anuais, apos este calculo dividir por uma quantidade
+    que eu possa ver mês a mês o meu lucro.
+    
+
+
+    */
+
+    
+
+  </script>
+
+  
+</body>
+</html>
