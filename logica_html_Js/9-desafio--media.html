@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+  .container {width: 90%;}
+  .corResult {color: red;}
+  label {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: .1rem;
+}
+</style>
+
+</head>
+<body>
+  
+
+  <script type="text/javascript">
+
+  cliente1 = prompt("Sr. Cliente 1- Digite seu nome: ")
+  sexo = prompt("Informe seu sexo :: Digite \nM para Masculino ou \nF para Feminino")
+  sexoTratado = (sexo.trim().toUpperCase() == "M" ? "M" : "F")
+  sexoMostra = (sexoTratado == "M" ? "do" : "da")
+  valor1 = Number(prompt(`Digite o valor ${sexoMostra} cliente ${cliente1} : `))
+
+
+  cliente2 = prompt("Sr. Cliente 2- Digite seu nome: ")
+  sexo = prompt("Informe seu sexo :: Digite \nM para Masculino ou \nF para Feminino")
+  sexoTratado = (sexo.trim().toUpperCase() == "M" ? "M" : "F")
+  sexoMostra = (sexoTratado == "M" ? "do" : "da")
+  valor2 = Number(prompt(`Digite o valor ${sexoMostra} cliente ${cliente2} : `))
+
+
+  cliente3 = prompt("Sr. Cliente 3- Digite seu nome: ")
+  sexo = prompt("Informe seu sexo :: Digite \nM para Masculino ou \nF para Feminino")
+  sexoTratado = (sexo.trim().toUpperCase() == "M" ? "M" : "F")
+  sexoMostra = (sexoTratado == "M" ? "do" : "da")
+  valor3 = Number(prompt(`Digite o valor ${sexoMostra} cliente ${cliente3} : `))
+  
+
+  
+  soma =valor1 + valor2 + valor3
+  media = soma /3
+
+  if(media > 100) {
+    document.write(`PARABENS SUA MEDEIA É ${media}`)
+  }else if (media > 50 && media < 100) {
+    document.write(`50 Muito bem vamos melhorar sua media é ${media}`)
+  }else if (media > 20 && media < 50) {
+    document.write(`Muito bem vamos melhorar sua media é ${media}`)
+  }else{
+    document.write(`Pessoal TA MUITO RUIM sua media é ${media}`)  
+  }
+
+
+
+    /*
+    DESAFIO MEDIA
+
+    Faça um programa que solicite o nome de tres clientes
+    apos solicitar o programa
+    tres valores que poderam ser numeros quebrados apos capturar os numeros que serao do cliente cli1 , cli2 e cli3
+    apos capturar os numeros e mostrar a opção
+   
+    - se o valor for maior que 100
+        mostrar mensagem: parabens a media de voces é maior que 100
+
+    - se der menor que 50 ,mostrar mensagem : muito bem voce esta na media vamos melhorar
+    - se der abaixo de 50 ate 20 ,mmostrar ensagem : voce precisa realmente melhorar
+    - se o valor der abaixo de 20 a mostrar mensagem : é isso realmente que voces querem ESTA MUITO RUIM !
+
+    */
+
+    
+
+  </script>
+
+  
+</body>
+</html>
