@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+  .container {width: 90%;}
+  .corResult {color: red;}
+  label {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: .1rem;
+}
+</style>
+
+</head>
+<body>
+  
+
+  <script type="text/javascript">
+
+  // fixos ::: despesas fixas
+  agua = 40
+  luz = 50
+  internet = 80
+  cursos = 800
+  aluguel = 1200
+
+  // calculo total das despesas
+  despesas = agua + luz + internet + cursos + aluguel
+
+  // o que nao tenho dados ainda, perguntar
+  salarioDia15 = parseFloat(prompt("Digite seu Salario no dia 15"))
+  salarioDia30 = parseFloat(prompt("Digite o Salario do dia 30"))
+  
+  // calculando total bruto salario
+  salarioTotal = salarioDia15 + salarioDia30
+  
+  // Calculo liquido : bruto - despesas
+  calculo = salarioTotal - despesas
+
+  // Controles para interagir usuario:
+  if(calculo < 0) {
+    alert("Voce esta no Negativo !")
+  }else {
+    alert("Parabens ..Vamos investir")
+  }
+  
+  
+  
+  
+  
+  
+  /*
+    DESAFIO :
+
+    Reinaldo precisa calcular valores de entrada()
+    fluxo de caixa pessoal()
+    Trabalha em empresa de gaz()
+
+    Os dias de recebimento sao 15 e 30()
+    Despesas Mensais ()
+    agua 40
+    luz 50
+    internet 80
+    cursos 800
+    aluguel 1200
+
+    valor de recebimento 15
+    valor de recebimento 30
+
+    mostrar valor restante:
+
+    Se der neagtivo:
+    Vc esta no negativo.
+
+    se sobrar , Parabens!
+    Vamos investir um pouco
+
+    // CONCEITOS ::
+
+    1 - foiar nos fixos -- neste caso nas despesas
+
+
+
+    */
+
+    
+
+  </script>
+
+  
+</body>
+</html>
