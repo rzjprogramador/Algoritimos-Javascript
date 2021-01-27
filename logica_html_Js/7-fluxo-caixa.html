@@ -23,6 +23,8 @@
 
   <script type="text/javascript">
 
+  // debugger
+
   // fixos ::: despesas fixas
   agua = 40
   luz = 50
@@ -42,12 +44,24 @@
   
   // Calculo liquido : bruto - despesas
   calculo = salarioTotal - despesas
+  
+  // Pegando 30% do calculo do lucro e guardando em inestimento
+  investimento = (calculo * 30)/ 100
+
+  // Pegando total liquido com reserva investimento ja descontado
+  lucroDisponivel = calculo - investimento
 
   // Controles para interagir usuario:
   if(calculo < 0) {
-    alert("Voce esta no Negativo !")
-  }else {
-    alert("Parabens ..Vamos investir")
+    document.write(`Voce Recebeu ${salarioTotal} === Tem de despesas ${despesas} === e esta NEGATIVADO em ${calculo} `)
+  }
+  else {
+    document.write(`
+      Parabens!
+      Voce Recebeu ${salarioTotal} === Tem de despesas ${despesas} === 
+      Voce tem pra investir ${investimento}  <br>
+      E seu saldo total com todos descontos e investimentos fica em ${lucroDisponivel}
+      `)
   }
   
   
@@ -80,6 +94,9 @@
 
     se sobrar , Parabens!
     Vamos investir um pouco
+
+    + Com o lucro fazer Reservar 30% para investimento 
+    e mostrar o novo lucro no caixa descontado
 
     // CONCEITOS ::
 
