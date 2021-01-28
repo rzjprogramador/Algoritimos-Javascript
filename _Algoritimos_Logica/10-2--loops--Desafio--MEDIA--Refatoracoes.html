@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+  .container {width: 90%;}
+  .corResult {color: red;}
+  label {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: .1rem;
+}
+</style>
+
+</head>
+<body>
+  
+
+  <script type="text/javascript">
+
+valorClientes = []
+
+for(i = 0; i <= 2; i++ ) {
+  cliente = prompt(`Digite seu nome: ${(i +1)}`)
+  sexo = prompt("Informe seu sexo :: Digite \nM para Masculino ou \nF para Feminino")
+  sexoTratado = (sexo.trim().toUpperCase() == "M" ? "M" : "F")
+  sexoMostra = (sexoTratado == "M" ? "do" : "da")
+  
+  valor = Number(prompt(`Digite o valor ${sexoMostra} cliente ${cliente} : `))
+
+  // ARMAZENANDO OS NUMEROS DO PROMPT NO ARRAY valorClientes[]
+  valorClientes.push(valor)
+ 
+}
+// FORA DO FOR ::: FAZER CALCULOS COM CAPTURADOS E ATRIBUIR A VAR 
+ // Armazenar na var media = A Soma dos 3 valores digitados no prompt que esta agora no array 
+ // Obs para exatidao no calculo usar () para isolar ordem de precedencia, senao altera o resultado 
+  media = (valorClientes[0] + valorClientes[1] + valorClientes[2]) /3
+
+
+
+  
+
+  /* 
+  DICAS:
+  FAZER LOOP DE PERGUNTAS :
+  TUDO QUE FOR CALCULO TEM QUE FAZER DENTRO DO FOR
+  E ARMAZENAR O RESULTADO EM UM ESPAÇO MEMORIA (ONDE VC CONSEGUE COLOCAR VARIOS ESPAÇOS LÁ
+  CONSEGUE COLOCAR O PRIEMIRO , O SEGUNDO ,TERCEIRO,...)
+
+  CONCEITOS:
+  ===============================
+
+  1º CAPTURAR DENTRO DO FOR --- E ARMAZENAR FORA DO FOR :::
+  fazer um array vazio antes do for para armazenar as perguntas capturadas
+  exemplo:     valorClientes = []
+  - se estou capturando com prompt e guardando na var valor , 
+  vou fazer um push nesta var para colocar no meu array vazio , que preparei para receber os capturados
+  
+  exemplo :   
+  // ARMAZENANDO OS NUMEROS DO PROMPT NO ARRAY valorClientes[]
+  valorClientes.push(valor)
+===============================
+
+  2º FORA DO FOR :: FAZER CALCULOS COM CAPTURADOS --SOMAR E ARMAZENAR EM VAR 
+  FORA DO FOR FAZER A MEDIA (PORQUE AINDA NAO TENHO LA DENTRO TODOS VALORES CAPTURADOS)
+  
+  // Armazenar na var media = A Soma dos 3 valores digitados no prompt que esta agora no array 
+   // Obs para exatidao no calculo usar () para isolar ordem de precedencia, senao altera o resultado 
+
+   media = (valorClientes[0] + valorClientes[1] + valorClientes[2]) /3
+
+
+
+
+
+
+
+
+
+  */
+
+  if(media > 100) {
+    document.write(`PARABENS SUA MÉDIA É ${media}`)
+  }else if (media > 50 && media < 100) {
+    document.write(`50 Muito bem vamos melhorar sua media é ${media}`)
+  }else if (media > 20 && media < 50) {
+    document.write(`Muito bem vamos melhorar sua media é ${media}`)
+  }else{
+    document.write(`Pessoal TA MUITO RUIM sua media é ${media}`)  
+  }
+
+
+
+    /*
+    DESAFIO MEDIA
+
+    Faça um programa que solicite o nome de tres clientes
+    apos solicitar o programa
+    tres valores que poderam ser numeros quebrados apos capturar os numeros que serao do cliente cli1 , cli2 e cli3
+    apos capturar os numeros e mostrar a opção
+   
+    - se o valor for maior que 100
+        mostrar mensagem: parabens a media de voces é maior que 100
+
+    - se der menor que 50 ,mostrar mensagem : muito bem voce esta na media vamos melhorar
+    - se der abaixo de 50 ate 20 ,mmostrar ensagem : voce precisa realmente melhorar
+    - se o valor der abaixo de 20 a mostrar mensagem : é isso realmente que voces querem ESTA MUITO RUIM !
+
+    */
+
+    
+
+  </script>
+
+  
+</body>
+</html>
