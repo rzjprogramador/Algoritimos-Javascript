@@ -1,5 +1,6 @@
 // LOOP COM WHILE --ONDE AS VARIAVEIS SAO INICIADAS FORA DO LOOP
 
+// Desafio contar 3 valores enviados pelo usuario com WHILE == ENQUANTO
 contador = 1
 soma = 0
 
