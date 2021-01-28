@@ -28,11 +28,13 @@
   tabuada = parseInt(prompt("Digite um numero: "))
   limiteFinalTabuada = parseInt(prompt("Digite o Limite Final para tabuada"))
 
-  for(i = 1; i < limiteFinalTabuada + 1; i++) {
+  for(i = 1; i <= limiteFinalTabuada; i++) {
     document.write(`${tabuada} x ${i} = ${(i * tabuada)}<br>`);
   }
 
   // i começa em 1; enquanto i for menor que 11 ; fazer i +i +1
+  // Importante ao inves de fazer +1 no final do limiteFinalTabuada no inico da instrução 
+  //fazer <= menor igual , para ter o total exato pedido pelo cliente .
 
 
   
