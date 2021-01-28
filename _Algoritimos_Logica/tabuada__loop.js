@@ -9,3 +9,10 @@
    //console.log(valor + "x" + a + " = " + (valor * a))
    console.log(`${valor} x ${i} = ${(valor * i)}`)
  }
+
+ // TABUADA DO 5
+ valor = 5
+
+for(i = 0; i < 11; i++) {
+  console.log(`${i} x ${valor} = ${valor * i}`)
+}
