@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+  .container {width: 90%;}
+  .corResult {color: red;}
+  label {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: .1rem;
+}
+</style>
+
+</head>
+<body>
+  
+
+<script type="text/javascript">
+
+//INICIALIZAÇÕES
+
+ valorClientes = []
+ quantClientes = parseInt(prompt("Quantas pessoas vão participar ? "))
+ 
+ for(i = 0; i < quantClientes; i++ ) {
+   
+    // PERGUNTA AOS PARTICIPANTES  
+    cliente = prompt(`Digite o nome do cliente : ${(i +1)}`)
+
+    sexo = prompt(`Informe o sexo de ${cliente} :: \nM  ou \nF `)
+    sexoTratado = (sexo.trim().toUpperCase() == "M" ? "M" : "F")
+    sexoMostra = (sexoTratado == "M" ? "do" : "da")
+    
+
+    //Capturar valor do cliente pra depois fazer push para o array de clientes[]
+    valorCliente = Number(prompt(`Digite o valor do cliente: ${cliente} `))
+    
+    // ARMAZENANDO OS NUMEROS DO PROMPT NO ARRAY valorClientes[]
+    valorClientes.push(valorCliente)
+    
+  }
+ 
+ // MENSAGENS NO FRONT APOS PROCESSAMENTOS
+ document.write(`Tivemos ${quantClientes} pessoas que participaram ! <br> <hr>`)
+
+
+ // MEDIA DINAMICA conforme tamanho do valor digitado pelo cliente
+ 
+ media = 0
+ for(i = 0;i < valorClientes.length;i++) {
+   media += valorClientes[i]
+  }
+  media = media / valorClientes.length
+
+
+  // CONTROLES
+
+  if(media >= 100) {
+    document.write(`PARABENS SUA MÉDIA É ${media.toFixed(2)}`)
+  }else if (media > 50 && media < 100) {
+    document.write(`50 Muito bem vamos melhorar sua media é ${media.toFixed(2)}`)
+  }else if (media > 20 && media < 50) {
+    document.write(`Muito bem vamos melhorar sua media é ${media.toFixed(2)}`)
+  }else{
+    document.write(`Pessoal TA MUITO RUIM sua media é ${media.toFixed(2)}`)  
+  }
+
+
+
+    /*
+    DESAFIO MEDIA
+
+    Faça um programa que solicite o nome de tres clientes
+    apos solicitar o programa
+    tres valores que poderam ser numeros quebrados apos capturar os numeros que serao do cliente cli1 , cli2 e cli3
+    apos capturar os numeros e mostrar a opção
+   
+    - se o valor for maior que 100
+        mostrar mensagem: parabens a media de voces é maior que 100
+
+    - se der menor que 50 ,mostrar mensagem : muito bem voce esta na media vamos melhorar
+    - se der abaixo de 50 ate 20 ,mmostrar ensagem : voce precisa realmente melhorar
+    - se o valor der abaixo de 20 a mostrar mensagem : é isso realmente que voces querem ESTA MUITO RUIM !
+
+  // == + SOLICITAÇÕES : POSSIVEIS COM OS DADOS ESTRUTURADOS NO OBJETO HASH
+   
+   2 NOTAS TERAO QUE SER FORNECIDAS PARA CADA CANDIDATO
+   ("Digite a primeira nota:"  "Digite a segunda nota")
+
+   NO FINAL DO PROGRAMA MOSTRAR :
+   O NOME DO ALUNO , NOTA E MEDIA INDIVIDUAL DE CADA ALUNO.
+
+
+
+
+    */
+
+  
+
+    
+
+  </script>
+
+  
+</body>
+</html>
