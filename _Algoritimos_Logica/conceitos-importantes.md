@@ -93,4 +93,16 @@ Fora do for : Faço o calculo media / pelo tamnho total de valor enviado e guard
   Assim nesta var terei a quantidade retornada da pergunta
   Fazer antes fora do for , pq se vc quer fazer um loop a pergunta pra saber o que fazer no loop ..a pergunta tem que ser fora do loop
 
+  ==============================================
+
+  // == + SOLICITAÇÕES : POSSIVEIS COM OS DADOS ESTRUTURADOS NO OBJETO HASH
+   
+   2 NOTAS TERAO QUE SER FORNECIDAS PARA CADA CANDIDATO
+   ("Digite a primeira nota:"  "Digite a segunda nota")
+
+   NO FINAL DO PROGRAMA MOSTRAR :
+   O NOME DO ALUNO , NOTA E MEDIA INDIVIDUAL DE CADA ALUNO.
+   ------------------------------------------
+   
+
 

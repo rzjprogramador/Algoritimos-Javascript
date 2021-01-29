@@ -23,51 +23,100 @@
 
 <script type="text/javascript">
 
-//INICIALIZAÇÕES
+//debugger
 
- valorClientes = []
- quantClientes = parseInt(prompt("Quantas pessoas vão participar ? "))
- 
- for(i = 0; i < quantClientes; i++ ) {
-   
-    // PERGUNTA AOS PARTICIPANTES  
-    cliente = prompt(`Digite o nome do cliente : ${(i +1)}`)
+//1º MONTAR CANDIDATO
+// ======================== Quantidade usuario =========================
+quant_de_usuario = Number(prompt(`Digite a quantidade de usuarios`))
 
-    sexo = prompt(`Informe o sexo de ${cliente} :: \nM  ou \nF `)
-    sexoTratado = (sexo.trim().toUpperCase() == "M" ? "M" : "F")
-    sexoMostra = (sexoTratado == "M" ? "do" : "da")
-    
+usuarios = []
 
-    //Capturar valor do cliente pra depois fazer push para o array de clientes[]
-    valorCliente = Number(prompt(`Digite o valor do cliente: ${cliente} `))
-    
-    // ARMAZENANDO OS NUMEROS DO PROMPT NO ARRAY valorClientes[]
-    valorClientes.push(valorCliente)
-    
+for(nome = 0; nome < quant_de_usuario; nome++) {
+  grupo_usuario = {}
+  grupo_usuario.nome = prompt(`Digite o nome do ${nome + 1} º usuario `)
+
+  // NOTAS
+  grupo_usuario.notas = []
+
+  sexo = prompt(`Digite o seu genero \n M para Masculino \n F para Feminino`)
+  s_sexo = (sexo.trim().toUpperCase() == "M" ? "M" : "F")
+  // Masculino
+  grupo_usuario.sexo_mostra = (s_sexo == "M" ? "do usuario" : "do usuario")
+  grupo_usuario.sexo_mostra = (s_sexo == "m" ? "do usuario" : "do usuario")
+  // Feminino
+  grupo_usuario.sexo_mostra = (s_sexo == "F" ? "do usuario" : "da usuaria")
+  grupo_usuario.sexo_mostra = (s_sexo == "f" ? "do usuario" : "da usuaria")
+
+// NOTAS 
+  somaNotas = 0
+  // laço para pegar as notas
+  for(nota_index = 0; nota_index < 2; nota_index++) {
+    nota_usuario = Number(prompt(`Digite a ${nota_index + 1}ª nota ${grupo_usuario.sexo_mostra}  ${grupo_usuario.nome} `))
+
+    // fazer a media e colocar no array grupo_usuario na propriedade notas
+    somaNotas += nota_usuario
+    grupo_usuario.notas.push(nota_usuario)
+  
+   }
+
+   grupo_usuario.media = somaNotas / grupo_usuario.notas.length
+   usuarios.push(grupo_usuario)
+
+}
+
+//==============================================
+// MEDIA
+somaGeralMedia = 0
+// CALCULO DAS MEDIAS e mostrar na tela
+for(usuario_index = 0; usuario_index < usuarios.length; usuario_index++) {
+  grupo_usuario = usuarios[usuario_index]
+
+  document.write(`${grupo_usuario.Aluno_mostra} ${grupo_usuario.aluno_mostra} ${grupo_usuario.nome} <br> `)
+  
+  somaDasNotas = 0
+  
+  // Mostrando notas
+  for(nota_index = 0; nota_index < grupo_usuario.notas.length; nota_index++) {
+    document.write(`obteve a ${nota_index + 1}ª nota = ${grupo_usuario.notas[nota_index]} <br><br> `)
   }
- 
- // MENSAGENS NO FRONT APOS PROCESSAMENTOS
- document.write(`Tivemos ${quantClientes} pessoas que participaram ! <br> <hr>`)
+
+  somaGeralMedia += grupo_usuario.media
+  document.write(`A media ${grupo_usuario.sexo_mostra} ${grupo_usuario.nome} 
+    é : ${grupo_usuario.media} <br><hr> `)
+}
+
+mediaGeral = somaGeralMedia / usuarios.length
+
+/*
+JA TEM TUDO Q PRECISA :
+- Quantidade de usuarios
+- Notas dos usuarios
+- Media dos usuarios
+- Soma Geral de todos usuarios
+- Media Geral 
+
+*/
+
+// ============ MENSAGENS =======================
+// Mensagem final todos participantes
+document.write(`Quantidade de usuarios : ${usuarios.length} `)
+document.write(`Média da pesquisa de todos usuarios : ${mediaGeral} <br><br> `)
 
 
- // MEDIA DINAMICA conforme tamanho do valor digitado pelo cliente
- 
- media = 0
- for(i = 0;i < valorClientes.length;i++) {
-   media += valorClientes[i]
-  }
-  media = media / valorClientes.length
 
 
   // CONTROLES
 
-  if(media >= 100) {
+  if(mediaGeral >= 100) {
     document.write(`PARABENS SUA MÉDIA É ${media.toFixed(2)}`)
-  }else if (media > 50 && media < 100) {
-    document.write(`50 Muito bem vamos melhorar sua media é ${media.toFixed(2)}`)
-  }else if (media > 20 && media < 50) {
+  }
+  else if (mediaGeral >= 50 && mediaGeral < 100) {
     document.write(`Muito bem vamos melhorar sua media é ${media.toFixed(2)}`)
-  }else{
+  }
+  else if (mediaGeral >= 20 && mediaGeral < 50) {
+    document.write(`Esta abaixo da media ... sua media é ${media.toFixed(2)}`)
+  }
+  else{
     document.write(`Pessoal TA MUITO RUIM sua media é ${media.toFixed(2)}`)  
   }
 
