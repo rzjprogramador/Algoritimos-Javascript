@@ -40,47 +40,34 @@ for(i = 0; i <= 2; i++ ) {
 // FORA DO FOR ::: FAZER CALCULOS COM CAPTURADOS E ATRIBUIR A VAR 
  // Armazenar na var media = A Soma dos 3 valores digitados no prompt que esta agora no array 
  // Obs para exatidao no calculo usar () para isolar ordem de precedencia, senao altera o resultado 
-  media = (valorClientes[0] + valorClientes[1] + valorClientes[2]) /3
-
-
-
   
+ // Resultado de media estatica refatorar por dinamica
+ //media = (valorClientes[0] + valorClientes[1] + valorClientes[2]) /3
 
-  /* 
-  DICAS:
-  FAZER LOOP DE PERGUNTAS :
-  TUDO QUE FOR CALCULO TEM QUE FAZER DENTRO DO FOR
-  E ARMAZENAR O RESULTADO EM UM ESPAÇO MEMORIA (ONDE VC CONSEGUE COLOCAR VARIOS ESPAÇOS LÁ
-  CONSEGUE COLOCAR O PRIEMIRO , O SEGUNDO ,TERCEIRO,...)
+ // MEDIA DINAMICA conforme tamanho do valor digitado pelo cliente
 
-  CONCEITOS:
-  ===============================
+ media = 0
+ for(i = 0;i < valorClientes.length;i++) {
+   media += valorClientes[i]
+ }
+ media = media / valorClientes.length
 
-  1º CAPTURAR DENTRO DO FOR --- E ARMAZENAR FORA DO FOR :::
-  fazer um array vazio antes do for para armazenar as perguntas capturadas
-  exemplo:     valorClientes = []
-  - se estou capturando com prompt e guardando na var valor , 
-  vou fazer um push nesta var para colocar no meu array vazio , que preparei para receber os capturados
-  
-  exemplo :   
-  // ARMAZENANDO OS NUMEROS DO PROMPT NO ARRAY valorClientes[]
-  valorClientes.push(valor)
-===============================
+ /*
+ minha media começa com 0
+no laço for ..O i meu interator começa com 0 e enquanto meu indice interador for Menor 
+que o tamanho de valor enviado pelo Cliente , fazer meu interador mais 1 vez, pra crescer mais 1
 
-  2º - FORA DO FOR :: FAZER CALCULOS COM CAPTURADOS --SOMAR E ARMAZENAR EM VAR 
-  FORA DO FOR FAZER A MEDIA (PORQUE AINDA NAO TENHO LA DENTRO TODOS VALORES CAPTURADOS)
-  
-  // Armazenar na var media = A Soma dos 3 valores digitados no prompt que esta agora no array 
-   // Obs para exatidao no calculo usar () para isolar ordem de precedencia, senao altera o resultado 
+Então neste loop media sera igual ela mesma que era 0 + valor enviado Clientes a cada interação ..por isso coloca o [i]
 
-   media = (valorClientes[0] + valorClientes[1] + valorClientes[2]) /3
+Fora do for : Faço o calculo media / pelo tamnho total de valor enviado e guardo na mesma varavel media
 
 
-  */
+ */
+
 
   // CONTROLES
 
-  if(media > 100) {
+  if(media >= 100) {
     document.write(`PARABENS SUA MÉDIA É ${media}`)
   }else if (media > 50 && media < 100) {
     document.write(`50 Muito bem vamos melhorar sua media é ${media}`)
@@ -108,6 +95,47 @@ for(i = 0; i <= 2; i++ ) {
     - se o valor der abaixo de 20 a mostrar mensagem : é isso realmente que voces querem ESTA MUITO RUIM !
 
     */
+
+     /* 
+  DICAS:
+  FAZER LOOP DE PERGUNTAS :
+  TUDO QUE FOR CALCULO TEM QUE FAZER DENTRO DO FOR
+  E ARMAZENAR O RESULTADO EM UM ESPAÇO MEMORIA (ONDE VC CONSEGUE COLOCAR VARIOS ESPAÇOS LÁ
+  CONSEGUE COLOCAR O PRIMEIRO , O SEGUNDO ,TERCEIRO,...)
+
+  CONCEITOS:
+  ===============================
+  DICAS DE OURO :
+  FAZER SEMPRE DE FORMA FATIADA --PROBLEMA A PROBLEMA ISOLAR E TESTAR NO CONSOLE
+
+  LOOP : SE ESTA FAZENDO UM LOOP PARA CAPTURAR DADOS É SÓ RPA CAPTURAR DADOS
+  SE FOR UM LOOP PARA DESCOBRIR UM VALOR ..É PRA SÓ DESCOBRIR UM VALOR
+  
+  ex: dentro do loop :: media += valorClientes[i] << É UM CALCULO EM CADA INTERACAO- ARMAZENADO EM UMA VARIAVEL PRA USAR DEPOIS
+
+
+
+  1º CAPTURAR DENTRO DO FOR --- E ARMAZENAR FORA DO FOR :::
+  fazer um array vazio antes do for para armazenar as perguntas capturadas
+  exemplo:     valorClientes = []
+  - se estou capturando com prompt e guardando na var valor , 
+  vou fazer um push nesta var para colocar no meu array vazio , que preparei para receber os capturados
+  
+  exemplo :   
+  // ARMAZENANDO OS NUMEROS DO PROMPT NO ARRAY valorClientes[]
+  valorClientes.push(valor)
+===============================
+
+  2º - FORA DO FOR :: FAZER CALCULOS COM CAPTURADOS --SOMAR E ARMAZENAR EM VAR 
+  FORA DO FOR FAZER A MEDIA (PORQUE AINDA NAO TENHO LA DENTRO TODOS VALORES CAPTURADOS)
+  
+  // Armazenar na var media = A Soma dos 3 valores digitados no prompt que esta agora no array 
+   // Obs para exatidao no calculo usar () para isolar ordem de precedencia, senao altera o resultado 
+
+   media = (valorClientes[0] + valorClientes[1] + valorClientes[2]) /3
+
+
+  */
 
     
 
