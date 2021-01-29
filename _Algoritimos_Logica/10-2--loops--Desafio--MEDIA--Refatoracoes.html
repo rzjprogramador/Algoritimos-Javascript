@@ -26,11 +26,19 @@
 valorClientes = []
 
 for(i = 0; i <= 2; i++ ) {
+
+  // Quantidade de CLIENTES DINAMICO enviado valores sem limitacao de clientes
+
+  /*
+  // ALGORITIMO ENGESSSADO EM 3 CLIENTES 
+
   cliente = prompt(`Digite seu nome: ${(i +1)}`)
   sexo = prompt("Informe seu sexo :: Digite \nM para Masculino ou \nF para Feminino")
   sexoTratado = (sexo.trim().toUpperCase() == "M" ? "M" : "F")
   sexoMostra = (sexoTratado == "M" ? "do" : "da")
-  
+  */
+
+
   valor = Number(prompt(`Digite o valor ${sexoMostra} cliente ${cliente} : `))
 
   // ARMAZENANDO OS NUMEROS DO PROMPT NO ARRAY valorClientes[]
@@ -110,7 +118,7 @@ Fora do for : Faço o calculo media / pelo tamnho total de valor enviado e guard
 
   LOOP : SE ESTA FAZENDO UM LOOP PARA CAPTURAR DADOS É SÓ RPA CAPTURAR DADOS
   SE FOR UM LOOP PARA DESCOBRIR UM VALOR ..É PRA SÓ DESCOBRIR UM VALOR
-  
+
   ex: dentro do loop :: media += valorClientes[i] << É UM CALCULO EM CADA INTERACAO- ARMAZENADO EM UMA VARIAVEL PRA USAR DEPOIS
 
 
