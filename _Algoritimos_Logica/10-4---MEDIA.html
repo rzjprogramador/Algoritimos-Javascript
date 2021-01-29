@@ -40,14 +40,15 @@ for(nome = 0; nome < quant_de_usuario; nome++) {
 
   sexo = prompt(`Digite o seu genero \n M para Masculino \n F para Feminino`)
   s_sexo = (sexo.trim().toUpperCase() == "M" ? "M" : "F")
-  // Masculino
-  grupo_usuario.sexo_mostra = (s_sexo == "M" ? "do usuario" : "do usuario")
-  grupo_usuario.sexo_mostra = (s_sexo == "m" ? "do usuario" : "do usuario")
-  // Feminino
-  grupo_usuario.sexo_mostra = (s_sexo == "F" ? "do usuario" : "da usuaria")
-  grupo_usuario.sexo_mostra = (s_sexo == "f" ? "do usuario" : "da usuaria")
 
-// NOTAS 
+    
+  // masculino ou feminino
+    grupo_usuario.sexo_mostra = (s_sexo == "M" ? "do usuario" : "da usuaria")
+  // tipo 
+  grupo_usuario.tipoUser = (s_sexo == "M" ? "O usuario" : "A usuaria")
+
+
+// NOTAS ====================================
   somaNotas = 0
   // laço para pegar as notas
   for(nota_index = 0; nota_index < 2; nota_index++) {
@@ -71,7 +72,7 @@ somaGeralMedia = 0
 for(usuario_index = 0; usuario_index < usuarios.length; usuario_index++) {
   grupo_usuario = usuarios[usuario_index]
 
-  document.write(`${grupo_usuario.Aluno_mostra} ${grupo_usuario.aluno_mostra} ${grupo_usuario.nome} <br> `)
+  document.write(`${grupo_usuario.tipoUser} ${grupo_usuario.nome} <br> `)
   
   somaDasNotas = 0
   
@@ -99,7 +100,7 @@ JA TEM TUDO Q PRECISA :
 
 // ============ MENSAGENS =======================
 // Mensagem final todos participantes
-document.write(`Quantidade de usuarios : ${usuarios.length} `)
+document.write(`Quantidade de usuarios : ${usuarios.length} <br> `)
 document.write(`Média da pesquisa de todos usuarios : ${mediaGeral} <br><br> `)
 
 
