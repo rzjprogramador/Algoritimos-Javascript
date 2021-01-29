@@ -21,30 +21,45 @@
 <body>
   
 
-  <script type="text/javascript">
+<script type="text/javascript">
 
-valorClientes = []
+/*
+// CLIENTES DINAMICO VIA DECISAO USUARIO : Perguntando ao usuarios a Quantidade de CLIENTES que pode enviar informações
+  
+  CONCEITOS :
+  Primeiro precisa perguntar "Quantas pessoas vão participar ? " e GUARDAR NUMA VAR
+  Assim nesta var terei a quantidade retornada da pergunta
+  Fazer antes fora do for , pq se vc quer fazer um loop a pergunta pra saber o que fazer no loop ..a pergunta tem que ser fora do loop
 
-for(i = 0; i <= 2; i++ ) {
 
-  // Quantidade de CLIENTES DINAMICO enviado valores sem limitacao de clientes
-
-  /*
-  // ALGORITIMO ENGESSSADO EM 3 CLIENTES 
-
-  cliente = prompt(`Digite seu nome: ${(i +1)}`)
-  sexo = prompt("Informe seu sexo :: Digite \nM para Masculino ou \nF para Feminino")
-  sexoTratado = (sexo.trim().toUpperCase() == "M" ? "M" : "F")
-  sexoMostra = (sexoTratado == "M" ? "do" : "da")
   */
+  
 
 
-  valor = Number(prompt(`Digite o valor ${sexoMostra} cliente ${cliente} : `))
+ quantClientes = parseInt(prompt("Quantas pessoas vão participar ? "))
+ valorClientes = []
 
-  // ARMAZENANDO OS NUMEROS DO PROMPT NO ARRAY valorClientes[]
-  valorClientes.push(valor)
- 
-}
+  for(i = 0; i <= quantClientes; i++ ) {
+
+    
+
+
+    /*
+    // ALGORITIMO ENGESSADO EM 3 CLIENTES 
+
+    cliente = prompt(`Digite seu nome: ${(i +1)}`)
+    sexo = prompt("Informe seu sexo :: Digite \nM para Masculino ou \nF para Feminino")
+    sexoTratado = (sexo.trim().toUpperCase() == "M" ? "M" : "F")
+    sexoMostra = (sexoTratado == "M" ? "do" : "da")
+    */
+
+
+    valor = Number(prompt(`Digite o valor ${sexoMostra} cliente ${cliente} : `))
+
+    // ARMAZENANDO OS NUMEROS DO PROMPT NO ARRAY valorClientes[]
+    valorClientes.push(valor)
+  
+  }
 // FORA DO FOR ::: FAZER CALCULOS COM CAPTURADOS E ATRIBUIR A VAR 
  // Armazenar na var media = A Soma dos 3 valores digitados no prompt que esta agora no array 
  // Obs para exatidao no calculo usar () para isolar ordem de precedencia, senao altera o resultado 
