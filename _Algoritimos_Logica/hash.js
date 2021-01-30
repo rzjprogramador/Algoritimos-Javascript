@@ -11,11 +11,13 @@ aluno = {
 
 }
 
-
+// SÓ É POSSIVEL CRIAR UMA COLEÇÃO DE HASH DENTRO DE UM ARRAY
 // Adicionando o hash de aluno no array alunos
+// Padrao : <array>.push(<hash>) -- Narrativa: no array tal,pushar o hash tal
 alunos.push(aluno)
 
-// Acessando propriedades do hash
+// Acessando propriedades do array
+// Padrao : <array>[indice].item
 alunos[0].nome
 
 // ==================================
@@ -28,9 +30,13 @@ aluno2 = {
 // Adicionando no array alunos[]
 alunos.push(aluno2)
 
-// Acessando propriedade nome do novo aluno2
+// Acessando propriedade do hash que esta dentro do array  
 alunos[1].nome
 
+// Acessando atributo do hash
+// Padrao: <hash>.<atributo>
+aluno.notas
+aluno2.nome
 
 /*
 COM HASH VC CONSEGUE ESTRUTURAR DADOS
