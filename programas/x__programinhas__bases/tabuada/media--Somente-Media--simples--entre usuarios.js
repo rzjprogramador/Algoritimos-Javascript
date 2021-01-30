@@ -6,7 +6,7 @@ quantidade = parseInt(prompt(`Digite a quantidade de usuarios`))
 
   for(interador = 0; interador < quantidade; interador++) {
 
-    nota = parseInt(prompt(`Digite a nota do usuario ${(interador + 1)}`))
+    nota = Number(prompt(`Digite a nota do usuario ${(interador + 1)}`))
     notas.push(nota)
 }
 somaNotas = notas.reduce((x, y) => x + y)

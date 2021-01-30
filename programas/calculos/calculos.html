@@ -25,13 +25,16 @@
 
 
 // FUNÇÕES ::: Declarando as funções para usar no programa
+function mostrar(resultado) {
+  document.write(resultado)
+}
 
 function funcTabuada() {
   tabuada = parseInt(prompt("Tabuada do numero ? "))
   limiteFinalTabuada = parseInt(prompt("Digite o Limite Final para sua tabuada"))
 
   for(i = 1; i <= limiteFinalTabuada; i++) {
-    document.write(`${tabuada} x ${i} = ${(i * tabuada)}<br>`);
+    mostrar(`${tabuada} x ${i} = ${(i * tabuada)}<br>`);
   }
 }
 
@@ -42,7 +45,7 @@ function funcMedia() {
 
   for(interador = 0; interador < quantidade; interador++) {
 
-    nota = parseInt(prompt(`Digite a nota do usuario ${(interador + 1)}`))
+    nota = Number(prompt(`Digite a nota do usuario ${(interador + 1)}`))
     notas.push(nota)
 }
 somaNotas = notas.reduce((x, y) => x + y)
@@ -64,7 +67,7 @@ while(opcao != 3) {
                   3 = Sair`))
 
   if(opcao == 1) {
-    funcTabuada();
+    funcTabuada()
   }
   else if(opcao == 2) {
     funcMedia();
