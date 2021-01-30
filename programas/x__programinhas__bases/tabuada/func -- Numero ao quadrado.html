@@ -1,6 +1,25 @@
 <script>
   // FUNÇÃO FAZER UM NUMERO AO QUADRADO
 
+    // Funcao com 2 return
+
+  function quadrado(numero) {
+    if(isNaN(numero)) {
+        return alert(`Valor digitado não é um numero válido`)
+    }
+    quad = numero * numero
+    return quad 
+}
+
+num = prompt("Digite um numero apra elevarmos ao quadrado: ")
+document.write(`O Quadrado de ${num} é ${(quadrado(num))} ` )
+
+
+
+  /*
+
+  // Função com 1 return
+
   function quadrado(numero) {
     quad = numero * numero
     return quad
@@ -8,5 +27,22 @@
 
 num = Number(prompt("Digite um numero para elevarmos ao quadrado: "))
 document.write(`O Quadrado de ${num} é ${quadrado(num)}`)
+
+*/
+
+/*
+
+CONCEITO :
+
+Uma funcao pode ou nao retornar um valor ao programa chamador.
+
+caso seja retornado um valor , usamos a instrução return em um ponto apropriado do programa.
+
+Quando a instrução return é encontrada, o processamento do código da função para neste ponto , e retorna o valor( e o controle ) para o chamador.
+
+Podemos ter mais de uma instrução return em uma função.
+
+*/
+
 
 </script>
