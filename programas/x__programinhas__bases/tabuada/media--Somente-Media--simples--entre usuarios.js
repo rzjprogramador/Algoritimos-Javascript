@@ -1,0 +1,30 @@
+// MEDIA SIMPLES ENTRE USUARIOS PRE DEFINIDOS
+
+quantidade = parseInt(prompt(`Digite a quantidade de usuarios`))
+
+  notas = []
+
+  for(interador = 0; interador < quantidade; interador++) {
+
+    nota = parseInt(prompt(`Digite a nota do usuario ${(interador + 1)}`))
+    notas.push(nota)
+}
+somaNotas = notas.reduce((x, y) => x + y)
+media = somaNotas / notas.length
+alert(`A media dos usuarios é ${media}`)
+
+
+
+
+
+// O array que vai guardar resultado no loop tem que estar fora do loop
+  // chumbado
+  //media =(numero1 + numero2 + numero3) / 3 
+
+  // Criei array para notas - Capturei notas e Adicionei notas no array
+  // Conceito : Criar Coleção vazia / Capturar item / adicionar item no array vazio
+
+// CALCULAR MEDIA :::
+// somar notas que estao dentro do array ..pesquisar por :: Soma todos valores array :: no js achamos o reduce
+// testar reduce no console :: [1, 2, 3].reduce((x, y) => x + y) // resposta = 6
+// O reduce sintaxe :: array.reduce((param1 , param2 <vai fazer algo com parametros>) => < isto> param1 + param2 <uma soma entre os parametros passados>)

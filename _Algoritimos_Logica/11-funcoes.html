@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+  .container {width: 90%;}
+  .corResult {color: red;}
+  label {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: .1rem;
+}
+</style>
+
+</head>
+<body>
+  
+
+  <script type="text/javascript">
+
+  // CRIAR FUNCAO PARA MOSTRAR
+  function mostra(mensagem) {
+    alert(mensagem)
+  }
+
+  //mostra("Alo mundo, Esta é a minha Primeira Função")
+  
+  // ---------------------------------------
+  
+  // 2º Modo fazer funcao -- atribuindo a uma variavel
+  var mostra = function(mensagem) {
+    document.write(mensagem)
+  }
+  mostra("Alo mundo 2")
+  
+  // ---------------------------------------
+  
+  // Função passada por valor atributo hash
+  aluno = {
+          nome: "Renata", 
+          notas: [10, 10], 
+          media: function() {
+            return (aluno.notas[0] * aluno.notas[1]) / 2 } 
+          }
+
+          // Acessar- Recuperar
+          aluno.nome
+          aluno.notas
+          aluno.media()
+
+  // ---------------------------------------
+  
+  // CRIAR A FUNÇÃO LEIA  -- Atribuindo a uma variavel
+  leia = function(mensagem) {
+    //return prompt(mensagem)
+    return document.write(mensagem)
+  }
+  //invocando função :
+  leia("<hr>Esta é minha Mensagem..via função leia !")
+  //leia(aluno.nome)
+  //leia(aluno.nome +" Tirou as notas "+ aluno.notas +" e tem a media: "+ aluno.media())
+
+  // ---------------------------------------
+
+  // FUNÇÃO LEIA NUMERO
+  numeroAjuda = 10
+
+  leiaNumero = function(numero) {
+    return parseInt(document.write(numero))
+  }
+  leiaNumero("<hr>Funcao leia Numero leu: "+ numeroAjuda)
+
+// ---------------------------------------
+
+  //FUNÇÃO para calcular expressoes e com Parametros para definir valores para se juntar a expressão na hora da invocação
+  function calcula(x, y) {
+    return (x * y + 6 * 9 -10 + 100)
+  }
+  // INVOCANDO
+  calcula(8, 9)
+  leiaNumero("<hr> Resultado da funcao de expressao com 2 parametros onde os valores foram definidos aqui é: "+ calcula(8, 9))
+
+
+
+
+
+  
+    /*
+
+    */
+
+    
+
+  </script>
+
+  
+</body>
+</html>

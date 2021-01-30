@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+  .container {width: 90%;}
+  .corResult {color: red;}
+  label {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: .1rem;
+}
+</style>
+
+</head>
+<body>
+  
+
+  <script type="text/javascript">
+
+
+// FUNÇÕES ::: Declarando as funções para usar no programa
+
+function funcTabuada() {
+  tabuada = parseInt(prompt("Tabuada do numero ? "))
+  limiteFinalTabuada = parseInt(prompt("Digite o Limite Final para sua tabuada"))
+
+  for(i = 1; i <= limiteFinalTabuada; i++) {
+    document.write(`${tabuada} x ${i} = ${(i * tabuada)}<br>`);
+  }
+}
+
+function funcMedia() {
+  quantidade = parseInt(prompt(`Digite a quantidade de usuarios`))
+
+  notas = []
+
+  for(interador = 0; interador < quantidade; interador++) {
+
+    nota = parseInt(prompt(`Digite a nota do usuario ${(interador + 1)}`))
+    notas.push(nota)
+}
+somaNotas = notas.reduce((x, y) => x + y)
+media = somaNotas / notas.length
+alert(`A media dos usuarios é ${media}`)
+}
+
+
+// ====================================
+
+// PROGRAMA :::
+// Importante primeiro declarar as funções -- depois todo o programa -- para que o programa possa enxergar as funções que ele vai chamar
+
+opcao = 0
+while(opcao != 3) {
+  opcao = parseInt(prompt(`Digite uma das opções a abaixo \n
+                  1 = Tabuada \n
+                  2 = Media \n
+                  3 = Sair`))
+
+  if(opcao == 1) {
+    funcTabuada();
+  }
+  else if(opcao == 2) {
+    funcMedia();
+  }
+  else if(opcao != 3) {
+    alert(`Opção Invalida`);
+  }
+}
+
+
+
+  </script>
+
+  
+</body>
+</html>

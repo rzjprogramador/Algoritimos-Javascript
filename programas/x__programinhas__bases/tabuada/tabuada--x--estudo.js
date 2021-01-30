@@ -1,6 +1,6 @@
 // TABUADA COM LOOP FOR
 
- // numero a ser afeytado por operacao
+ // numero a ser afetado por operacao
  valor = 3
 
  limiteTabuada = 11
