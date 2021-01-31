@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+
+  lado1 = Number(prompt("Digite o numero do primeiro lado: "))
+  lado2 = Number(prompt("Digite o segundo do primeiro lado: "))
+  lado3 = Number(prompt("Digite o terceiro do primeiro lado: "))
+
+  triangulo = (lado1 < (lado2 + lado3)) && (lado2 < (lado1 + lado3)) && (lado3 < (lado1 + lado2))
+  equilatero = (lado1 == lado2) && (lado2 == lado3)
+  escaleno = (lado1 != lado2) && (lado2 != lado3) && (lado1 != lado3)
+/*
+  console.log("Pode formar um triangulo ?" + triangulo)
+  console.log("O triangulo é Equilatero?" + equilatero)
+  console.log("O triangulo é Escaleno?" + escaleno)
+*/
+
+  opcao = ""
+  switch (opcao) {
+  case triangulo:
+    document.write("É um Triangulo")
+  break;
+    
+  case equilatero:
+    document.write("É um Equilátero")
+  break;
+
+  case escaleno:
+    document.write("É um Escaleno")
+  break;
+ 
+  default:
+    alert(`Nenhuma das Opções`);
+  break;
+  }
+
+
+</script>
+
+
+</body>
+</html>
