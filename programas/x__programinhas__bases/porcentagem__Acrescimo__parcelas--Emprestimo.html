@@ -1,0 +1,19 @@
+<script>
+
+  valorEmprestimo = Number(prompt("Qual o valor do emprestimo ? "))
+
+  taxaAcrescimo = 20
+
+  emprestimoComTaxa = (valorEmprestimo * taxaAcrescimo) / 100
+
+  emprestimoAtualizado = emprestimoComTaxa + valorEmprestimo
+
+  alert(`O valor total do seu emprestimo ficou em R$ ${emprestimoAtualizado} `)
+
+  parcelasDesejadas = Number(prompt(" Quer dividir entre quantas parcelas ? "))
+
+  parceladoApagar = emprestimoAtualizado / parcelasDesejadas
+
+  alert(`Você pagará ${parcelasDesejadas} parcelas de R$ ${parceladoApagar}`)
+
+</script>
