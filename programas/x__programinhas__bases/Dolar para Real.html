@@ -1,0 +1,15 @@
+<script>
+
+  // Converter REAIS para DOLAR -- Modo Estatico :
+  reais = parseFloat(prompt("Quantos Reais eu tenho: "))
+dolarCotacao = 5.20
+
+dolares = reais / dolarCotacao
+
+alert(`Convertendo meus R$ ${reais} Reais ...Posso ter U$$ ${dolares.toLocaleString('en-us', {minimumFractionDigits: 2})} Dolares`)
+
+/*
+CONVERTER  NUMEROS DA VARIAVEL PARA REAL BRASIL >> toLocaleString('pt-br', {minimumFractionDigits: 2})
+CONVERTER NUMEROS PARA DOLAR AMERICANO >> toLocaleString('en-US', {minimumFractionDigits: 2})
+*/
+</script>
