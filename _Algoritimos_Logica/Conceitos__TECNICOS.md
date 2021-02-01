@@ -13,7 +13,9 @@ Objects (Hash)- Class / Arrays / Functions
 
 ## VARIAVEIS 
 variaveis >> contem: IDENTIFICADOR e VALOR  -- sintaxe: variavel = valor
-variaveis no contexto Object (Hash) -- variavel é chamada de chave -- sintaxe: chave = valor 
+variaveis no contexto Object (Hash) -- variavel é chamada de chave -- sintaxe: chave : valor 
+  obs: no conceito objeto atribuição é com : e delimitador com , virgula.
+
 
 
 # SINONIMOS NA PROGRAMAÇÃO
