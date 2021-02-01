@@ -1,0 +1,92 @@
+<script>
+/*
+  OBJETOS EM OUTRAS LINGUAGENS DENOMINADO HASH
+  nele as variaveis são denominadas >> chave = valor  /ou em ingles/ key = value 
+
+  Usabilidade: ESTRUTURA AS VARIAVEIS EM UMA CLASSE
+  A o inves de ter um monte de variaveis soltas sem uma estrutura 
+  criamos uma classe com um nome de referencia que representa uma coleção de variaveis
+  Para recuperar-mos depois ou acessar as variaveis dessa nova classe referenciamos classe.variavel para obtermos o valor desejado
+*/
+
+/*
+EXEMPLO VARIAVEIS SOLTAS SEM UMA ESTRUTURA ::
+
+nome = "Reinaldo";
+profissao = "Programador";
+idade = 43;
+status = true;
+fazendo = ""
+
+*/
+// ESTRUTURANDO EM UMA CLASSE DE OBJETO essas mesmas variaveis soltas ::
+// Sintaxe valores: dentro da Classe Object o sinal de atribuição das propriedades é : ao inves de = ... e o delimitador/separador de itens é , virgula ao inves de ;
+
+let pessoa = {
+  nome : "Reinaldo",
+  profissao : "Programador",
+  idade : 43,
+  status : true,
+  fazendo : ""
+}
+// mostrando no console todas propriedades do Objeto Classe
+console.log(pessoa)
+
+// acessando propriedade ou variaveis dessa classe :sintaxe::  classe.<propriedade>
+pessoa.nome
+
+//======================================
+
+ // ===== HASH -- OBJETO DE DADOS ESTRUTURADOS ==========
+
+// Criando um array vazio alunos, para armazenar hash {dados estruturados de aluno}
+
+alunos = []
+
+aluno = {
+    nome: "Reinaldo",
+    notas: [10, 10],
+    media: 10
+
+}
+
+// SÓ É POSSIVEL CRIAR UMA COLEÇÃO DE HASH DENTRO DE UM ARRAY
+// Adicionando o hash de aluno no array alunos
+// Padrao : <array>.push(<hash>) -- Narrativa: no array tal,pushar o hash tal
+alunos.push(aluno)
+
+// Acessando propriedades do array
+// Padrao : <array>[indice].item
+alunos[0].nome
+
+// ==================================
+// Criando outro Hash 
+aluno2 = {
+  nome: "Gustavo",
+  notas: [20, 20],
+  media: 20
+}
+// Adicionando no array alunos[]
+alunos.push(aluno2)
+
+// Acessando propriedade do hash que esta dentro do array  
+alunos[1].nome
+
+// Acessando atributo do hash
+// Padrao: <hash>.<atributo>
+aluno.notas
+aluno2.nome
+
+/*
+COM HASH VC CONSEGUE ESTRUTURAR DADOS
+É UMA ESTRUTURA ONDE VC GUARDA EM UM OBJETO DADOS ESTRUTURADOS
+
+SE VC QUISER MOSTRAR DADOS DE CADA USUARIO VC CONSEGUE COM HASH {} PQ OS DADOS ESTARAO ESTRUTURADOS POR ENTIDADE
+
+VC CRIA UMA UNICA VARIAVEL E ESTRUTURA SEU CONTEUDO COM DADOS EM chave e valor
+
+*/
+
+
+</script>
+
