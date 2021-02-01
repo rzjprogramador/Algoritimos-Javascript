@@ -1,3 +1,14 @@
+## TIPOS PRIMITIVOS
+### tipos por Valores
+string literal >> texto,
+number >> numero,
+undefined >> indefinido,
+null >> nulo --> ( vazio ) quér resertar ou redefinir um valor
+
+### tipos por REFERENCIA
+Objects (Hash)- Class / Arrays / Functions
+
+
 
 
 ## VARIAVEIS 
