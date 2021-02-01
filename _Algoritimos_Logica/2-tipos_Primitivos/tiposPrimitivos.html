@@ -3,11 +3,11 @@
   /* === JAVASCRIPT ======
 Contexto : TIPOS PRIMITIVOS 
 
-Quais existem : De Referencia / De Valores
+Quais existem : De Valores /  De Referencia 
 Ferramenta : Descobrir Tipo >> typeof()
 sintaxe: typeof <operando>  exemplo: ttypeof "Rei" -- exemplo2 >> typeof(texto)
  
-//Tipos Primitivos De Referencia : 
+//Tipos Primitivos De VALORES : 
 string literal >> texto,
 number >> numero,
 undefined >> indefinido,
@@ -17,8 +17,8 @@ null >> nulo --> ( vazio ) quér resertar ou redefinir um valor
 texto = "Reinaldo";     // tipo string
 numero = 43;           // tipo number em javascript pode ser inteiro ou decimal
 status = true        // Boolean (true = verdadeiro / false = falso)
-indefinido = undefined // pouco usado
-algoSelecionado = null // Redefinir valor resetar 
+indefinido = undefined // TIPO POR VALOR >>  pouco usado
+algoSelecionado = null // TIPO OBJECT >> É UM HASH -- OBJETO >> Serve: Redefinir valor resetar 
 
 // Descobrindo o tipo dos valores das variaveis
 typeof(texto)
@@ -26,5 +26,17 @@ typeof(numero)
 typeof(status)
 typeof(indefinido)
 typeof(algoSelecionado)
+
+// artigo typeof
+[https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/typeof]
+
+/*
+=============================================
+===== TIPOS POR REFERENCIA ==================
+Objects (Hash)/ Arrays / Functions
+*/
+// OBJECT 
+// o que é : referencia onde voce coleciona identificador e valores num lugar só e acessa por essa referencia
+
 
 </script>
