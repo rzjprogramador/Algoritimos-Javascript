@@ -1,0 +1,41 @@
+
+<script>
+
+  /*
+ARRAYS
+´E um conjunto de dados , que pode ser acessado por indice
+
+*/
+
+familia = [true, 45, "Reizao", 17, pessoa]
+
+console.log(familia)
+console.log(familia.length)
+
+// =====================================
+// 2 objetos criados para acessar no array ::
+let pessoa = {
+  nome : "Reinaldo",
+  profissao : "Programador",
+  idade : 43,
+  status : true,
+  fazendo : ""
+}
+
+trabalho = {
+    empresa: "Minha empresa",
+    local: "Sao Paulo",
+    numero: 72
+}
+
+// Colocando so objetos no Array e acessando
+arrayDeObjetos = [pessoa, trabalho]
+console.log(arrayDeObjetos)
+
+// Acessar propriedades dos objetos dentro do array
+arrayDeObjetos[1].empresa
+// "Minha empresa"
+arrayDeObjetos[0].nome
+//"Reinaldo"
+
+</script>

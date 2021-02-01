@@ -1,0 +1,39 @@
+<script>
+/*
+  OBJETOS EM OUTRAS LINGUAGENS DENOMINADO HASH
+  nele as variaveis são denominadas >> chave = valor  /ou em ingles/ key = value 
+
+  Usabilidade: ESTRUTURA AS VARIAVEIS EM UMA CLASSE
+  A o inves de ter um monte de variaveis soltas sem uma estrutura 
+  criamos uma classe com um nome de referencia que representa uma coleção de variaveis
+  Para recuperar-mos depois ou acessar as variaveis dessa nova classe referenciamos classe.variavel para obtermos o valor desejado
+*/
+
+/*
+EXEMPLO VARIAVEIS SOLTAS SEM UMA ESTRUTURA ::
+
+nome = "Reinaldo";
+profissao = "Programador";
+idade = 43;
+status = true;
+fazendo = ""
+
+*/
+// ESTRUTURANDO EM UMA CLASSE DE OBJETO essas mesmas variaveis soltas ::
+// Sintaxe valores: dentro da Classe Object o sinal de atribuição das propriedades é : ao inves de = ... e o delimitador/separador de itens é , virgula ao inves de ;
+
+let pessoa = {
+  nome : "Reinaldo",
+  profissao : "Programador",
+  idade : 43,
+  status : true,
+  fazendo : ""
+}
+// mostrando no console todas propriedades do Objeto Classe
+console.log(pessoa)
+
+// acessando propriedade ou variaveis dessa classe :sintaxe::  classe.<propriedade>
+pessoa.nome
+
+</script>
+
