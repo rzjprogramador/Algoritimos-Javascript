@@ -32,29 +32,30 @@ alert(`A media dos usuarios é ${media}`)
 // PROGRAMA :::
 // Importante primeiro declarar as funções -- depois todo o programa -- para que o programa possa enxergar as funções que ele vai chamar
 
-opcao = 0
-
-while(opcao != 3) {
+function opcaoClient() {
   opcao = parseInt(prompt(`Digite uma das opções a abaixo \n
                   1 = Tabuada \n
                   2 = Media \n
                   3 = Sair`))
 
-  switch (opcao) {
-  case 1:
+  if(opcao === 1) {
     funcTabuada()
-  break;
-    
-  case 2:
-    funcMedia();
-  break;
- 
-  default:
-    alert(`Opção Invalida`);
-  break;
   }
-  
+  if(opcao === 2) {
+    funcMedia()
+  }
+  if(opcao === 3) {
+    alert("Saindo do Loop")
+  }                  
+  if(opcao != 3) {
+    opcaoClient()
+  }
 }
+
+opcaoClient()
+
+
+
 
 
 </script>
