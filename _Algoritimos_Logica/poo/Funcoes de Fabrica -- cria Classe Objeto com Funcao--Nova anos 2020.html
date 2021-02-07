@@ -1,0 +1,37 @@
+<script>
+
+  /*
+FUNÇÃO DE FABRICA -- Factory Functions
+((NOVO METODO DE CRIAR OBJETOS SEM O THIS - E SEM CONSTRUCTOR ))
+- Criar o Objeto em forma de função
+- Passar os atributos que vão ter o objeto por parametro
+- Retornar em objeto os atributos ja com os parametros atribuidos (se tiverem o mesmo nome explicitar só o chave key)
+- INSTANCIAR :: atribuir a uma nova var o objeto Funcao de Fabrica criado (e nesta instanciacao ja setar os valores dos atributos do construtor passado que espera por esses valores para iniciar o novo objeto)
+Depois só ver o objeto de Fabrica criado
+Sintaxe: novaInstancia = <objetoClasseCriado> (<passar os valores esperados para cada parametro >)
+
+*/
+
+function criarCelular(marca, tamanho, capacidadeBateria) {
+ return {
+  marca,
+  tamanho,
+  capacidadeBateria,
+
+  ligar() {
+    alert("Fazendo ligação ....")
+  }
+ }
+}
+
+// Instanciando :
+cel1 = criarCelular("Azus", 5.9, 5000)
+
+// Acessando Instanciados
+cel1.marca
+cel1.tamanho
+cel1.ligar()
+
+
+
+</script>

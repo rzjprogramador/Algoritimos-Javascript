@@ -1,0 +1,72 @@
+<script>
+
+class ContaBanco {
+  numConta = 0
+    tipoConta = "C"
+    dono = "Reinaldo"
+    saldo = 15.000
+    status = false
+
+// Metodos Especiais
+  // Dono
+    set setDono(d) {
+    dono = d 
+    }
+    get getDono() {
+       return dono 
+    }
+    // Saldo
+    set setSaldo(s) {
+        saldo = s
+    }
+    get getSaldo() {
+        return saldo
+    }
+    // Status
+    set setStatus(s) {
+        status = s 
+    }
+    get getStatus() {
+        return status    
+    }
+
+    // Metodos
+    // Metodo Abrir COnta
+    function abrirConta(t) {
+      setTipo(t)
+      setStatus(true)
+
+      if(t = "CC") {
+        saldo = 50
+      }
+      else if (t = "CP") {
+        saldo = 150
+      }
+    }
+
+    // metodo Fechar Conta
+    function fecharConta() {
+      if(saldo > 0) {
+        alert("Conta com dinheiro")
+      }
+      else if(saldo < 0) {
+        alert("Conta em Debito")
+      }
+      else {
+        setStatus = false
+      }
+    }
+    
+}
+
+// Instanciar 
+c1 = new ContaBanco
+
+// Acessar Recuperar
+c1.dono
+c1.saldo
+
+
+    
+
+</script>
