@@ -4,6 +4,10 @@
       callback === ligar de volta
 --------------------------------------
 
+// CONCEITO RESUMIDO :: CALLBACK ::
+      executar depois
+--------------------------------------
+
 // QUANDO USAR  :: CALLBACK ::
       depois de um metodo em um array >> usar um parametro como função para fazer algo com o parametro que virou argumento
 --------------------------------------
