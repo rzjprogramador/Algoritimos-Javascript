@@ -20,6 +20,11 @@
 
 --------------------------------------
 
+// OUTROS EXEMPLOS COM OUTRAS FUNCIONALIDADE :: REDUCE ::
+
+
+--------------------------------------
+
 // O QUE POSSO FAZER COM :: REDUCE ::
       
 

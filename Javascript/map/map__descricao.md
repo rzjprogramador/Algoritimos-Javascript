@@ -20,6 +20,11 @@
 
 --------------------------------------
 
+// OUTROS EXEMPLOS COM OUTRAS FUNCIONALIDADE :: MAP ::
+
+
+--------------------------------------
+
 // O QUE POSSO FAZER COM :: MAP ::
       
 
