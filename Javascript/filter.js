@@ -1,30 +1,24 @@
-const array = [
-  "Credito", "R$ 200", "R$ 400", "Contas a Pagar", "R$ 300", "R$ 400", "Meus dados"
-]
+array = ["pais Reinaldo", "pais Renata", "Gustavo", "Leonardo"]
 
-const novoArray = array.filter(novo => novo.includes("R$ 400"))
+novoArray = array.filter(param => param.includes("pais"))
+
 console.log(novoArray)
 
 /*
-FILTRANDO STRING DO ARRAY
-- criamos o array com varias strings
-- vamos filtrar este array com filter e guardar numa nova variavel 
-  --> ex: novoArray = array.filter()
-Este metodo filter espera uma funcao de calback que é sme nome e com um parametro e o argumento
-parametro que queremos ter de volta , argumento o que queremos que faça
-novo => novo.includes("R$ 400") 
-  novo é o nome do parametro => que vai retornar novo.includes(aO que quero)
+DESAFIO : USAR MAIS QUE UM METODO --
+FERRAMENTA : usado FUNÇÃO CALBACK
 
-  Então no calback 
-  defino o parametro que quero  e => retorno este parametro com o argumento 
-      de fazer a função que eu quero ..quero includes("R$ 400") 
+CONCEITO TECNICO: 
+primeiro metodo e como parametro uma funcao anonima com 1 parametro como callback => que retorna este parametro como argumento/instrucao para fazer algo com o resultado desta primeira funcao é o callback
 
 
-*/
-// Treinando novo filter :: Retirar Renta e Reinaldo e colocar em var pais --
-// Obs buscar por pais ..porque ainda nao consegui buscar mais que 1 item do array de uma vez
+ FERRAMENTAS DENTRO : 
+ -->Metodos usados metodo1 = filter(para filtrar o array)
 
-const pessoas = ['Pais Reinaldo', 'Pais Renata', 'Leonardo', 'Gustavo']
+ --> metodo2 = includes(ver se tem incluso no array o que queremos chamado por parametro)
 
-const pais = pessoas.filter(nomes => nomes.includes('Pais'))
-console.log(pais)
+SINTAXE :: armazenaResultado = array.metodo1(param => retorna param.metodo2("Resposta-Param"))
+console.log(novoArray)
+ 
+
+ */
