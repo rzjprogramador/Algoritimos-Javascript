@@ -7,10 +7,12 @@ console.log(total)
 /*
 Reduce === reduzir
 Sintaxe : 
-resultado = array.reduce(function(acumulador , atual) {
-  FAZER ALGO COM acumulador e atual exemplo soma : return acumulador + atual
+resultado = array.reduce((acumulador , atual) => acumulador + atual
 
   DESAFIO : SOMAR TODOS NUMEROS DO ARRAY
+  O que espera a função Reduce : espera por 2 parametros :: 
+    (acumulador, atual) retorna acumulador <alguma Operação> atual ...guarda em uma variavel
+
 })
 
 */

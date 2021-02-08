@@ -8,6 +8,10 @@ console.log(novoArray)
 DESAFIO : USAR MAIS QUE UM METODO --
 FERRAMENTA : usado FUNÇÃO CALBACK
 
+
+
+
+
 CONCEITO TECNICO: 
 primeiro metodo e como parametro uma funcao anonima com 1 parametro como callback => que retorna este parametro como argumento/instrucao para fazer algo com o resultado desta primeira funcao é o callback
 
@@ -17,7 +21,7 @@ primeiro metodo e como parametro uma funcao anonima com 1 parametro como callbac
 
  --> metodo2 = includes(ver se tem incluso no array o que queremos chamado por parametro)
 
-SINTAXE :: armazenaResultado = array.metodo1(param => retorna param.metodo2("Resposta-Param"))
+SINTAXE :: resultado = array.filter(param => param.metodo2("Minha busca por Param"))
 console.log(novoArray)
  
 

@@ -1,7 +1,11 @@
-const cores = ["azul", "vermelho", "verde"]
+// O que posso fazer com :: 
 
-for(let cor of cores) {
-  console.log(cor)
-}
-minhaCor(c) => result = c.toUpperCase();
-console.log(result)
+// O que espera ::
+
+// Sintaxe ::
+
+// Exemplo Eficaz ::
+
+// Exemplo Antigo ::
+
+(param => param.AlgumMetodo())
