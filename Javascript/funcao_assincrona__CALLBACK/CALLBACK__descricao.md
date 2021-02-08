@@ -1,4 +1,4 @@
-# Descrever Funcionalidade
+# Descrever Funcionalidade CALLBACK
 
 // O QUE QUER DIZER  :: CALLBACK ::
       callback === ligar de volta
@@ -25,6 +25,13 @@
 --------------------------------------
 
 // Exemplo Otimizado :: CALLBACK ::
+
+array = ["pais Reinaldo", "pais Renata", "Gustavo", "Leonardo"]
+
+novoArray = array.filter(param => param.includes("pais"))
+
+console.log(novoArray)
+
 
 --------------------------------------
 
