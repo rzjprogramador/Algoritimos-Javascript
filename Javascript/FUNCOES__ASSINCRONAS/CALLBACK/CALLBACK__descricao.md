@@ -1,5 +1,7 @@
 # Descrever Funcionalidade CALLBACK
 
+--------------------------------------
+
 // O QUE QUER DIZER  :: CALLBACK ::
       callback === ligar de volta
 --------------------------------------

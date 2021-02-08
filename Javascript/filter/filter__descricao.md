@@ -1,46 +1,44 @@
-# Descrever Funcionalidade ::  ::
+# Descrever Funcionalidade :: FILTER  ::
 
---------------------------------------
-
-// O QUE QUER DIZER  ::   ::
+// O QUE QUER DIZER  :: FILTER  ::
        === 
 --------------------------------------
 
-// CONCEITO RESUMIDO ::  ::
+// CONCEITO RESUMIDO :: FILTER  ::
 
 --------------------------------------
 
-// QUANDO USAR  ::  ::
+// QUANDO USAR  :: FILTER  ::
       
 
 --------------------------------------
 
-// EXEMPLO ::  ::
+// EXEMPLO :: FILTER  ::
       
 
 --------------------------------------
 
-// O QUE POSSO FAZER COM ::  ::
+// O QUE POSSO FAZER COM :: FILTER  ::
       
 
 --------------------------------------
 
-// O QUE ESPERA ::  :: 
+// O QUE ESPERA :: FILTER  ::
       
 
 --------------------------------------
 
-// Sintaxe ::  ::
+// Sintaxe :: FILTER  ::
       
 
 --------------------------------------
 
-// Exemplo Otimizado ::  ::
+// Exemplo Otimizado :: FILTER  ::
 
 
 --------------------------------------
 
-// Exemplo Encapsulado ::  ::
+// Exemplo Encapsulado :: FILTER  ::
 
 
 --------------------------------------

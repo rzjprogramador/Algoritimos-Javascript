@@ -1,46 +1,46 @@
-# Descrever Funcionalidade ::  ::
+# Descrever Funcionalidade :: MAP ::
 
 --------------------------------------
 
-// O QUE QUER DIZER  ::   ::
+// O QUE QUER DIZER  :: MAP ::
        === 
 --------------------------------------
 
-// CONCEITO RESUMIDO ::  ::
+// CONCEITO RESUMIDO :: MAP ::
 
 --------------------------------------
 
-// QUANDO USAR  ::  ::
+// QUANDO USAR  :: MAP ::
       
 
 --------------------------------------
 
-// EXEMPLO ::  ::
+// EXEMPLO :: MAP ::
       
 
 --------------------------------------
 
-// O QUE POSSO FAZER COM ::  ::
+// O QUE POSSO FAZER COM :: MAP ::
       
 
 --------------------------------------
 
-// O QUE ESPERA ::  :: 
+// O QUE ESPERA :: MAP :: 
       
 
 --------------------------------------
 
-// Sintaxe ::  ::
+// Sintaxe :: MAP ::
       
 
 --------------------------------------
 
-// Exemplo Otimizado ::  ::
+// Exemplo Otimizado :: MAP ::
 
 
 --------------------------------------
 
-// Exemplo Encapsulado ::  ::
+// Exemplo Encapsulado :: MAP ::
 
 
 --------------------------------------

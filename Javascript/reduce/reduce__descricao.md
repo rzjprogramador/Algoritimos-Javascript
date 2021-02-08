@@ -1,46 +1,46 @@
-# Descrever Funcionalidade ::  ::
+# Descrever Funcionalidade :: REDUCE ::
 
 --------------------------------------
 
-// O QUE QUER DIZER  ::   ::
+// O QUE QUER DIZER  :: REDUCE  ::
        === 
 --------------------------------------
 
-// CONCEITO RESUMIDO ::  ::
+// CONCEITO RESUMIDO :: REDUCE ::
 
 --------------------------------------
 
-// QUANDO USAR  ::  ::
+// QUANDO USAR  :: REDUCE ::
       
 
 --------------------------------------
 
-// EXEMPLO ::  ::
+// EXEMPLO :: REDUCE ::
       
 
 --------------------------------------
 
-// O QUE POSSO FAZER COM ::  ::
+// O QUE POSSO FAZER COM :: REDUCE ::
       
 
 --------------------------------------
 
-// O QUE ESPERA ::  :: 
+// O QUE ESPERA :: REDUCE :: 
       
 
 --------------------------------------
 
-// Sintaxe ::  ::
+// Sintaxe :: REDUCE ::
       
 
 --------------------------------------
 
-// Exemplo Otimizado ::  ::
+// Exemplo Otimizado :: REDUCE ::
 
 
 --------------------------------------
 
-// Exemplo Encapsulado ::  ::
+// Exemplo Encapsulado :: REDUCE ::
 
 
 --------------------------------------
