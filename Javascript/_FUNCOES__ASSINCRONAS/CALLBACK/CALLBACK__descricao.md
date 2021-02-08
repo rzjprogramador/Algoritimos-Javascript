@@ -1,4 +1,6 @@
-# Descrever Funcionalidade CALLBACK
+# Descrever Funcionalidade ::  CALLBACK ::
+
+--------------------------------------
 
 // O QUE QUER DIZER  :: CALLBACK ::
       callback === ligar de volta
@@ -9,7 +11,7 @@
 --------------------------------------
 
 // QUANDO USAR  :: CALLBACK ::
-      depois de um metodo em um array >> usar um parametro como função para fazer algo com o parametro que virou argumento
+      depois de um metodo em um array >> usar um parametro como função para fazer algo com o parametro que virou argumento na instrução dentro da funcao
 --------------------------------------
 
 // EXEMPLO :: CALLBACK ::
