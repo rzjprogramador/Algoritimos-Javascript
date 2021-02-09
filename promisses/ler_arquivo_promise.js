@@ -14,9 +14,42 @@ const lerArquivo = function(arquivo) {
   })
 }
 
+// INVOCAÇÃO CHAMADA COM ASYNC AWAIT DE MODO SEQUENCIAL 
+const init = async() => {
+
+  const contents1 = await lerArquivo("teste.txt")
+  const contents2 = await lerArquivo("teste2.txt")
+  const contents3 = await lerArquivo("teste3.txt")
+  const contents4 = await lerArquivo("teste4.txt")
+
+  console.log(contents1)
+  console.log(contents2)
+  console.log(contents3)
+  console.log(contents4)
+}
+init()
+
+
+/*
+AO INVES DE INVOCAR ASSIM CONFUSO :
+
 lerArquivo('teste.txt').then(function(contents) {
   console.log(contents)
-})
+
+  return lerArquivo('teste2.txt')
+}).then(function(contents) {
+    console.log(contents)
+    
+    return lerArquivo('teste3.txt')
+  }).then(function(contents) {
+      console.log(contents)
+    
+      return lerArquivo('teste4.txt')
+    }).then(function(contents) {
+        console.log(contents)
+    })
+*/
+
 
 
 
@@ -64,8 +97,42 @@ SE DÉR TUDO CERTO PASSAMOS O RESOLVE , PASSANDO O CONTEUDO QUE DEU CERTO === el
 */
 
 /*
+:: CHAMADA DA FUNÇÃO -- EXECUÇÃO :::
 QUERO LER O ARQUIVO : lerArquivo('teste.txt')
 E COLOCO O THEN -- QUE RECEBE MA FUNÇÃO QUE RECEBE O CONTEUDO DE VOLTA -- coloco o conteudo que deu certo ==== .then(function(contents))
 SE EU RECEBER ESTE CONTEUDO POSSO FAZER O QUE PRECISO COM ESTE CONTEUDO === {  console.log(contents) }
+
+# SE QUERO QUE ESSA PROMESSA RETORNE A LEITURA DE UM PROXIMO
+PRA EXECUTAR UM OUTRO THEN OU OUTRA COISA
+
+POSSO EXECUTAR DENTRO DESSA PROMESSA ..UMA OUTRA PROMESSA
+CHAMAR O ARQUIVO 2 O ARQUIVO 3 O ARQUIVO 4 ===
+
+return lerArquivo('teste2.txt')
+}).then(function(contents) {
+    console.log(contents)
+
+ 
+
+=== OBS :: TA CONFUSO ==== PODEMOS MELHORAR OTMIZAR COM ASYNC AWAIT
+    QUE VAI LER SEQUENCIAL COMO EM OUTRAS LINGUAGENS ::
+
+    // INVOCAÇÃO CHAMADA COM ASYNC AWAIT DE MODO SEQUENCIAL 
+const init = async() => {
+
+  const contents1 = await lerArquivo("teste.txt")
+  const contents2 = await lerArquivo("teste2.txt")
+  const contents3 = await lerArquivo("teste3.txt")
+  const contents4 = await lerArquivo("teste4.txt")
+
+  console.log(contents1)
+  console.log(contents2)
+  console.log(contents3)
+  console.log(contents4)
+}
+init()
+
+
+
 
 */
